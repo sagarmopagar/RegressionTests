@@ -16,6 +16,7 @@ public class TestGoogleSearchPage extends InvokeDriver {
 		driver.get("https://www.google.com");
 		Assert.assertEquals("Google", driver.getTitle());
 		
+		//xpath for search button
 		String btnSearch = "(.//*[@value='Google Search'])[2]";
 		
 		boolean btnEnabled = driver.findElement(By.xpath(btnSearch)).isEnabled();
