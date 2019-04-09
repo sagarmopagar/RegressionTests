@@ -10,7 +10,7 @@ public class TestGoogleSearchPage extends InvokeDriver {
 
 	public static void main(String[] args) throws Exception {
 
-
+		// Get Driver
 		TestGoogleSearchPage Test = new TestGoogleSearchPage();
 		WebDriver driver = Test.DriverReturner();
 		driver.get("https://www.google.com");
@@ -24,6 +24,8 @@ public class TestGoogleSearchPage extends InvokeDriver {
 			throw new Exception();
 		}
 		System.out.println("Test case was executed successfully");
+		
+		//Quit Driver
 		driver.quit();
 	}
 }
